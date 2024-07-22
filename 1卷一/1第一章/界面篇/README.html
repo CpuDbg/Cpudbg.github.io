@@ -1,0 +1,517 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Administrator\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.2\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="article-title no-number">&#x7B2C;&#x4E00;&#x7AE0; &#x754C;&#x9762;&#x548C;&#x83DC;&#x5355;</h1>
+<h1 class="article-title no-number">&#x7B2C;&#x4E8C;&#x7AE0; &#x754C;&#x9762;&#x548C;&#x83DC;&#x5355;</h1>
+<h1 class="article-title no-number">&#x7B2C;&#x4E09;&#x7AE0; &#x754C;&#x9762;&#x548C;&#x83DC;&#x5355;</h1>
+<h1 class="mume-header" id="%E8%8F%9C%E5%8D%95">&#x83DC;&#x5355;</h1>
+
+<img src="..\Img\&#x83DC;&#x5355;&#x5C55;&#x793A;.png" style="zoom:100%;">
+<p>&#x4E3B;&#x83DC;&#x5355;&#x4E0B;&#x4E00;&#x822C;&#x4F1A;&#x6709;&#x516B;&#x4E2A;&#x83DC;&#x5355;&#x9879;. &#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;:</p>
+<blockquote>
+<ul>
+<li><strong>File</strong>(&#x6587;&#x4EF6;)</li>
+<li><strong>View</strong>(&#x89C6;&#x56FE;)</li>
+<li><strong>Debug</strong>(&#x8C03;&#x8BD5;)</li>
+<li><strong>Plugins</strong>(&#x63D2;&#x4EF6;)(&#x622A;&#x56FE;&#x4E2D;&#x6CA1;&#x6709;, &#x540E;&#x9762;&#x63D2;&#x4EF6;&#x7AE0;&#x8282;&#x4F1A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;)</li>
+<li><strong>Options</strong>(&#x9009;&#x9879;)</li>
+<li><strong>Windows</strong>(&#x7A97;&#x53E3;)</li>
+<li><strong>Help</strong>(&#x5E2E;&#x52A9;)</li>
+<li><strong>&#x53D1;&#x5E03;&#x65E5;&#x671F;&#x4EE5;&#x53CA;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x53F7;</strong></li>
+</ul>
+</blockquote>
+<h2 class="mume-header" id="file">File</h2>
+
+<img src="..\Img\File.png" style="zoom:100%;">
+<p>File&#x83DC;&#x5355;&#x4E0B;&#x4E00;&#x822C;&#x4F1A;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x5B50;&#x83DC;&#x5355;&#x9879;, &#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;:</p>
+<blockquote>
+<ul>
+<li><strong>Open</strong> (&#x6253;&#x5F00;&#x8C03;&#x8BD5;&#x76EE;&#x6807;)</li>
+<li><strong>Attach</strong> (&#x9644;&#x52A0;&#x8FDB;&#x7A0B;)</li>
+<li><strong>Exit</strong> (&#x5173;&#x95ED;&#x8C03;&#x8BD5;&#x5668;)</li>
+<li><strong>Clear Invalid History</strong> (&#x6E05;&#x9664;&#x65E0;&#x6548;&#x7684;&#x5386;&#x53F2;&#x8C03;&#x8BD5;&#x7EAA;&#x5F55;)</li>
+<li><strong>Clear All History</strong> (&#x6E05;&#x9664;&#x6240;&#x6709;&#x7684;&#x5386;&#x53F2;&#x8C03;&#x8BD5;&#x7EAA;&#x5F55;)</li>
+<li><strong>&#x5386;&#x53F2;&#x8C03;&#x8BD5;&#x7EAA;&#x5F55;</strong></li>
+</ul>
+</blockquote>
+<h3 class="mume-header" id="open">Open</h3>
+
+<img src="..\Img\&#x6253;&#x5F00;&#x8C03;&#x8BD5;&#x76EE;&#x6807;.png" style="zoom:100%;">
+<blockquote>
+<ul>
+<li><strong>&#x6587;&#x4EF6;&#x540D;</strong> &#x8F93;&#x5165;&#x8981;&#x8C03;&#x8BD5;&#x7684;&#x76EE;&#x6807;&#x8DEF;&#x5F84;(&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;)</li>
+<li><strong>&#x6587;&#x4EF6;&#x7C7B;&#x578B;</strong> &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x4EF6;(&#x5176;&#x5B83;&#x7684;&#x8FC7;&#x6EE4;&#x4E0D;&#x663E;&#x793A;)</li>
+</ul>
+</blockquote>
+<img src="..\Img\&#x6587;&#x4EF6;&#x7C7B;&#x578B;.png" style="zoom:100%;">
+<blockquote>
+<ul>
+<li><strong>&#x53C2;&#x6570;</strong> &#x8C03;&#x8BD5;&#x76EE;&#x6807;&#x8FD0;&#x884C;&#x65F6;&#x9009;&#x5B9A;&#x7684;&#x8FD0;&#x884C;&#x53C2;&#x6570;. (&#x4E00;&#x822C;&#x8C03;&#x8BD5;&#x7C7B;&#x4F3C; &#x8BB0;&#x4E8B;&#x672C;&#x4E4B;&#x7C7B;&#x7684;&#x8F6F;&#x4EF6;&#x4F1A;&#x7528;&#x5230;.)</li>
+<li><strong>&#x8FD0;&#x884C;&#x76EE;&#x5F55;</strong> &#x4E3A;&#x8C03;&#x8BD5;&#x76EE;&#x6807;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x76EE;&#x5F55;.</li>
+</ul>
+</blockquote>
+<h3 class="mume-header" id="attach">Attach</h3>
+
+<img src="..\Img\Attach.png" style="zoom:100%;">
+<pre>&#x70B9;&#x51FB;&#x9644;&#x52A0;&#x5F39;&#x51FA;&#x5982;&#x4E0A;&#x9644;&#x52A0;&#x8FDB;&#x7A0B;&#x7A97;&#x53E3;.
+&#x5BF9;&#x7740;&#x6307;&#x5B9A;&#x8FDB;&#x7A0B;&#x53F3;&#x952E;, &#x5F39;&#x51FA;&#x5BF9;&#x8BDD;&#x6846;.
+</pre>
+<blockquote>
+<ul>
+<li><strong>PID (Decimalism)</strong> &#x52FE;&#x9009;&#x548C;&#x53D6;&#x6D88; &#x5217;&#x8868;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B; &#x4F1A;&#x4EE5;10&#x8FDB;&#x5236;&#x548C;16&#x8FDB;&#x5236;&#x4E4B;&#x95F4;&#x6709;&#x5207;&#x6362;.</li>
+<li><strong>Refresh Big endian</strong> &#x8FDB;&#x7A0B;&#x5217;&#x8868;&#x4EE5;&#x5927;&#x7AEF;&#x5E8F;&#x6392;&#x5217; (&#x6700;&#x540E;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x5728;&#x5217;&#x8868;&#x6700;&#x524D;&#x9762;.&#x4E0B;&#x540C;)</li>
+<li><strong>Refresh Little endian</strong> &#x5C0F;&#x7AEF;&#x5E8F;&#x6392;&#x5217;</li>
+<li><strong>Attach</strong> &#x8C03;&#x8BD5;&#x5668;&#x9644;&#x52A0;&#x8FDB;&#x7A0B;</li>
+<li><strong>Inject Dll</strong> &#x9009;&#x5B9A;&#x7684;&#x8FDB;&#x7A0B;&#x6CE8;&#x5165;&#x6A21;&#x5757;.</li>
+<li><strong>Go to Windows</strong> &#x8DF3;&#x8F6C;&#x81F3;&#x8FDB;&#x7A0B;&#x7A97;&#x53E3;</li>
+<li><strong>Go to PE</strong> &#x8DF3;&#x8F6C;&#x81F3;PE&#x7A97;&#x53E3;</li>
+<li><strong>Go to Memory</strong> &#x8DF3;&#x8F6C;&#x81F3;&#x5185;&#x5B58;&#x7A97;&#x53E3;</li>
+<li><strong>Go to Module</strong> &#x8DF3;&#x8F6C;&#x81F3;&#x6A21;&#x5757;&#x7A97;&#x53E3;</li>
+<li><strong>Go to Handle</strong> &#x8DF3;&#x8F6C;&#x81F3;&#x53E5;&#x67C4;&#x7A97;&#x53E3;</li>
+<li><strong>Go to Thread</strong> &#x8DF3;&#x8F6C;&#x81F3;&#x7EBF;&#x7A0B;&#x7A97;&#x53E3;</li>
+<li><strong>Pause Process</strong> &#x6682;&#x505C;&#x9009;&#x5B9A;&#x8FDB;&#x7A0B;</li>
+<li><strong>Terminate Process</strong> &#x7ED3;&#x675F;&#x9009;&#x5B9A;&#x8FDB;&#x7A0B;</li>
+<li><strong>Open the folder</strong> &#x6253;&#x5F00;&#x9009;&#x5B9A;&#x8FDB;&#x7A0B;&#x7684;&#x6587;&#x4EF6;&#x5939;</li>
+</ul>
+</blockquote>
+<h1 class="mume-header" id="cpu%E7%AA%97%E5%8F%A3">CPU&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E6%97%A5%E5%BF%97%E7%AA%97%E5%8F%A3">&#x65E5;&#x5FD7;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E6%A8%A1%E5%9D%97%E7%AA%97%E5%8F%A3">&#x6A21;&#x5757;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E5%86%85%E5%AD%98%E7%AA%97%E5%8F%A3">&#x5185;&#x5B58;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E8%BF%9B%E7%A8%8B%E7%AA%97%E5%8F%A3">&#x8FDB;&#x7A0B;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E7%BA%BF%E7%A8%8B%E7%AA%97%E5%8F%A3">&#x7EBF;&#x7A0B;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E7%9B%91%E8%A7%86%E7%AA%97%E5%8F%A3">&#x76D1;&#x89C6;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E8%BF%BD%E8%B8%AA%E7%AA%97%E5%8F%A3">&#x8FFD;&#x8E2A;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E8%A1%A5%E4%B8%81%E7%AA%97%E5%8F%A3">&#x8865;&#x4E01;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E6%96%AD%E7%82%B9%E7%AA%97%E5%8F%A3">&#x65AD;&#x70B9;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E6%BA%90%E7%A0%81%E7%AA%97%E5%8F%A3">&#x6E90;&#x7801;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E6%8F%92%E4%BB%B6%E7%AA%97%E5%8F%A3">&#x63D2;&#x4EF6;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="%E5%8F%A5%E6%9F%84%E7%AA%97%E5%8F%A3">&#x53E5;&#x67C4;&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3-1">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3-2">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3-3">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3-4">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<h1 class="mume-header" id="xxx%E7%AA%97%E5%8F%A3-5">xxx&#x7A97;&#x53E3;</h1>
+
+<blockquote>
+<p>&#x4E00;&#x7EA7;&#x6807;&#x9898;&#x7684;&#x5185;&#x5BB9;</p>
+</blockquote>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="asm" class="language-asm"><code>004132FB  |.  8940 04       |MOV DWORD PTR [EAX+0x4],EAX
+004132FE  |.  83C0 08       |ADD EAX,0x8
+00413301  |.  4A            |DEC EDX                                 ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+00413302  |.^ 75 F4         \JNZ SHORT &#x5185;&#x5B58;&#x8BBF;&#x95EE;.004132F8
+00413304  |.  8BFB          MOV EDI,EBX
+00413306  |.  6A 04         PUSH 0x4                                 ; /Protect = PAGE_READWRITE
+00413308  |.  C1E7 0F       SHL EDI,0xF                              ; |
+0041330B  |.  0379 0C       ADD EDI,DWORD PTR [ECX+0xC]              ; |
+0041330E  |.  68 00100000   PUSH 0x1000                              ; |AllocationType = MEM_COMMIT
+00413313  |.  68 00800000   PUSH 0x8000                              ; |Size = 8000 (32768.)
+00413318  |.  57            PUSH EDI                                 ; |Address = &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+00413319  |.  FF15 FCF14300 CALL DWORD PTR [&lt;&amp;KERNEL32.VirtualAlloc&gt;&gt;; \VirtualAlloc
+0041331F  |.  85C0          TEST EAX,EAX
+00413321  |.  75 08         JNZ SHORT &#x5185;&#x5B58;&#x8BBF;&#x95EE;.0041332B
+00413323  |.  83C8 FF       OR EAX,0xFFFFFFFF
+00413326  |.  E9 93000000   JMP &#x5185;&#x5B58;&#x8BBF;&#x95EE;.004133BE
+0041332B  |&gt;  8D97 00700000 LEA EDX,DWORD PTR [EDI+0x7000]
+00413331  |.  3BFA          CMP EDI,EDX                              ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+00413333  |.  77 3C         JA SHORT &#x5185;&#x5B58;&#x8BBF;&#x95EE;.00413371
+00413335  |.  8D47 10       LEA EAX,DWORD PTR [EDI+0x10]
+00413338  |&gt;  8348 F8 FF    /OR DWORD PTR [EAX-0x8],0xFFFFFFFF
+0041333C  |.  8388 EC0F0000&gt;|OR DWORD PTR [EAX+0xFEC],0xFFFFFFFF
+00413343  |.  8D88 FC0F0000 |LEA ECX,DWORD PTR [EAX+0xFFC]
+00413349  |.  C740 FC F00F0&gt;|MOV DWORD PTR [EAX-0x4],0xFF0
+00413350  |.  8908          |MOV DWORD PTR [EAX],ECX
+00413352  |.  8D88 FCEFFFFF |LEA ECX,DWORD PTR [EAX-0x1004]
+00413358  |.  8948 04       |MOV DWORD PTR [EAX+0x4],ECX
+0041335B  |.  C780 E80F0000&gt;|MOV DWORD PTR [EAX+0xFE8],0xFF0
+00413365  |.  05 00100000   |ADD EAX,0x1000
+0041336A  |.  8D48 F0       |LEA ECX,DWORD PTR [EAX-0x10]
+0041336D  |.  3BCA          |CMP ECX,EDX                             ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+0041336F  |.^ 76 C7         \JBE SHORT &#x5185;&#x5B58;&#x8BBF;&#x95EE;.00413338
+00413371  |&gt;  8B45 FC       MOV EAX,DWORD PTR [EBP-0x4]              ;  kernel32.BaseThreadInitThunk
+00413374  |.  8D4F 0C       LEA ECX,DWORD PTR [EDI+0xC]
+00413377  |.  05 F8010000   ADD EAX,0x1F8
+0041337C  |.  6A 01         PUSH 0x1
+0041337E  |.  5F            POP EDI                                  ;  kernel32.7649FE09
+0041337F  |.  8948 04       MOV DWORD PTR [EAX+0x4],ECX
+00413382  |.  8941 08       MOV DWORD PTR [ECX+0x8],EAX
+00413385  |.  8D4A 0C       LEA ECX,DWORD PTR [EDX+0xC]
+00413388  |.  8948 08       MOV DWORD PTR [EAX+0x8],ECX
+0041338B  |.  8941 04       MOV DWORD PTR [ECX+0x4],EAX
+0041338E  |.  83649E 44 00  AND DWORD PTR [ESI+EBX*4+0x44],0x0
+00413393  |.  89BC9E C40000&gt;MOV DWORD PTR [ESI+EBX*4+0xC4],EDI       ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+0041339A  |.  8A46 43       MOV AL,BYTE PTR [ESI+0x43]
+0041339D  |.  8AC8          MOV CL,AL
+0041339F  |.  FEC1          INC CL
+004133A1  |.  84C0          TEST AL,AL
+004133A3  |.  8B45 08       MOV EAX,DWORD PTR [EBP+0x8]
+004133A6  |.  884E 43       MOV BYTE PTR [ESI+0x43],CL
+004133A9  |.  75 03         JNZ SHORT &#x5185;&#x5B58;&#x8BBF;&#x95EE;.004133AE
+004133AB  |.  0978 04       OR DWORD PTR [EAX+0x4],EDI               ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+004133AE  |&gt;  BA 00000080   MOV EDX,0x80000000
+004133B3  |.  8BCB          MOV ECX,EBX
+004133B5  |.  D3EA          SHR EDX,CL
+004133B7  |.  F7D2          NOT EDX                                  ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+004133B9  |.  2150 08       AND DWORD PTR [EAX+0x8],EDX              ;  &#x5185;&#x5B58;&#x8BBF;&#x95EE;.&lt;ModuleEntryPoint&gt;
+004133BC  |.  8BC3          MOV EAX,EBX
+004133BE  |&gt;  5F            POP EDI                                  ;  kernel32.7649FE09
+004133BF  |.  5E            POP ESI                                  ;  kernel32.7649FE09
+004133C0  |.  5B            POP EBX                                  ;  kernel32.7649FE09
+004133C1  |.  C9            LEAVE
+004133C2  \.  C3            RETN
+</code></pre><p>JS &#x4EE3;&#x7801;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>C &#x4EE3;&#x7801;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="c" class="language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><p>Python &#x4EE3;&#x7801;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World!&apos;</span><span class="token punctuation">)</span>
+</pre><p>Java &#x4EE3;&#x7801;&#xFF1A;</p>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
